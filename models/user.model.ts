@@ -6,9 +6,9 @@ interface Iuser {
     isVerified: boolean,
     isAdmin: boolean,
     forgotPasswordToken: string,
-    forgotPasswordTokenExpiry: string,
+    forgotPasswordTokenExpiry: Date,
     verifyToken: string
-    verifyTokenExpiry: string
+    verifyTokenExpiry: Date
 }
 const userSchema = new Schema<Iuser>({
     userName: {
